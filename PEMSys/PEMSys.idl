@@ -1,0 +1,29 @@
+// PEMSys.idl : 用于 PEMSys.exe 的类型库源
+
+// 此文件将由 MIDL 编译器进行处理以产生
+// 类型库(PEMSys.tlb)。
+
+[ uuid(A53BD978-741C-4FE7-9737-BD71BCCDE028), version(1.0) ]
+library PEMSys
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CPEMSysDoc 的主调度接口
+	
+	[ uuid(82CAAED5-C8C5-446E-B4C4-571A05A15303) ]
+	dispinterface IPEMSys
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CPEMSysDoc 的类信息
+	
+	[ uuid(0E2CE157-5F92-41A2-840D-B78713FB5C17) ]
+	coclass CPEMSysDoc
+	{
+		[default] dispinterface IPEMSys;
+	};
+};

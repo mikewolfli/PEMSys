@@ -1,0 +1,4 @@
+// Microsoft Visual C++ generated Help ID include file.
+// Used by PEMSys.rc
+//
+#define HIDC_EDIT_ITEM_CONTROLGROUPID   0x80b10492    // IDD_DIALOG_ORDERID

@@ -1,0 +1,2103 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\PEMSys.rc2""  // 非 Microsoft Visual C++ 编辑资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "1 TYPELIB ""PEMSys.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PEMSys.ico"
+IDR_PEMSysTYPE          ICON                    "res\\PEMSysDoc.ico"
+IDI_DLGICON             ICON                    "res\\icon1.ico"
+IDI_ICON_INIT           ICON                    "res\\ico00001.ico"
+IDI_ICON_USER           ICON                    "res\\ico00002.ico"
+IDI_ICON_ADD            ICON                    "res\\ico00003.ico"
+IDI_ICON_DELETE         ICON                    "res\\icon2.ico"
+IDI_ICON_FIND           ICON                    "res\\ico00004.ico"
+IDI_ICON_FIRST          ICON                    "res\\ico00005.ico"
+IDI_ICON_LAST           ICON                    "res\\ico00006.ico"
+IDI_ICON_MODIFY         ICON                    "res\\ico00007.ico"
+IDI_ICON_NEXT           ICON                    "res\\ico00008.ico"
+IDI_ICON_PREVIOUS       ICON                    "res\\ico00009.ico"
+IDI_ICON_VIEWALL        ICON                    "res\\ico00010.ico"
+IDI_ICON_QUERY          ICON                    "res\\ico00011.ico"
+IDI_ICON_PRINT          ICON                    "res\\ico00012.ico"
+IDI_ICON_CANCEL         ICON                    "res\\ico00013.ico"
+IDI_ICON_SAVE           ICON                    "res\\ico00014.ico"
+IDI_ICON_EXIT           ICON                    "res\\icon3.ico"
+IDI_ICON_ORDER          ICON                    "res\\ico00015.ico"
+IDI_ICON_CONFIG         ICON                    "res\\ico00016.ico"
+IDI_ICON_CONTROL        ICON                    "res\\icon4.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_ITEM                BITMAP                  "res\\item32.bmp"
+IDB_SMALL_ITEM          BITMAP                  "res\\Item16.bmp"
+IDB_SPLASH              BITMAP                  "res\\splash.bmp"
+IDB_BKGROUDMP           BITMAP                  "res\\background.bmp"
+IDB_BITMAP_LOGO         BITMAP                  "res\\bitmap2.bmp"
+IDB_TAB                 BITMAP                  "res\\bitmap1.bmp"
+IDB_SAVED               BITMAP                  "res\\bmp00001.bmp"
+IDB_UNSAVED             BITMAP                  "res\\bmp00002.bmp"
+IDB_STATUS              BITMAP                  "res\\bmp00003.bmp"
+IDB_WASTE               BITMAP                  "res\\bmp00004.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_LOGIN
+    BUTTON      ID_LOGOUT
+    BUTTON      ID_PASSWORD
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_HELP
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+    BUTTON      ID_APP_EXIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "登录(&L)",                    ID_LOGIN
+        MENUITEM "注销(&O)",                    ID_LOGOUT
+        MENUITEM "修改密码(&P)",                ID_PASSWORD
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "信息管理(&I)"
+    BEGIN
+        POPUP "项目管理(&T)"
+        BEGIN
+            MENUITEM "项目(&I)",                    ID_ITEM_ITEM
+            MENUITEM "电梯参数(&P)",                ID_ITEM_DATAINPUT
+            MENUITEM "商务查询(&C)",                ID_ITEM_COMMERCESEARCH
+            MENUITEM "Excel输出(&E)",               ID_ITEM_EXCEL
+        END
+        POPUP "合同管理(&P)", INACTIVE
+        BEGIN
+            MENUITEM "MOL生成(&M)",                 ID_PROJECT_MOLMAKE
+            MENUITEM "合同MOL(&P)",                 ID_PROJECT_PROJECTMOL
+            MENUITEM "标准MOL(&S)",                 ID_PROJECT_STANDARDMOL
+            MENUITEM "MOL输出(&O)",                 ID_PROJECT_MOLOUTPUT
+        END
+        POPUP "物料资源管理(&R)", INACTIVE
+        BEGIN
+            MENUITEM "零部件(&P)",                  ID_RESOURCE_PART
+            MENUITEM "特殊件(&S)",                  ID_RESOURCE_SPECIALPART
+            MENUITEM "部件BOM(&B)",                 ID_RESOURCE_PARTBOM
+            MENUITEM "BOM输出",                     ID_RESOURCE_BOMOUTPUT
+        END
+        POPUP "供应商管理(&O)", INACTIVE
+        BEGIN
+            MENUITEM "基本资料(&B)",                ID_SUPPLIER_BASIC
+            MENUITEM "分类查询(&F)",                ID_SUPPLIER_SEARCH
+            MENUITEM "产品关联(&P)",                ID_SUPPLIER_PRODUCT
+        END
+        POPUP "分公司/客户管理(&C)", INACTIVE
+        BEGIN
+            MENUITEM "基本资料(&B)",                ID_CUSTOMER_BASIC
+            MENUITEM "信息查询(&F)",                ID_CUSTOMER_SEARCH
+        END
+    END
+    POPUP "系统维护(&S)"
+    BEGIN
+        MENUITEM "系统配置\tF3",                ID_SYSCONFIG
+        MENUITEM "人员维护\tAlt+F2",            ID_SYS_PERSON
+        POPUP "界面方案(&F)"
+        BEGIN
+            MENUITEM "还原",                        ID_SKIN_NO
+            MENUITEM SEPARATOR
+            MENUITEM "宝石绿",                      ID_SKIN_SAP
+            MENUITEM "经典蓝",                      ID_SKIN_GTCLASSIC
+        END
+        MENUITEM "数据库备份\tF6",              ID_BACKUP
+        MENUITEM "还原数据库\tF7",              ID_RESTOREDATA
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "Outlook 工具栏",              ID_VIEW_INSTALLBAR
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "层叠(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "排列图标(&A)",                ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "关闭当前窗口",                IDW_CLOSE_NOW
+        MENUITEM "关闭所有窗口",                IDW_CLOSE_ALL
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "帮助主题(&H)",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "关于 PEMSys(&A)...",          ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_ITEM_ORDER MENU 
+BEGIN
+    MENUITEM "合同的订单情况",              ID_ITEM_ORDER_DISPLAY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_F6,          ID_BACKUP,              VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F7,          ID_RESTOREDATA,         VIRTKEY, NOINVERT
+    VK_F2,          ID_SYS_PERSON,          VIRTKEY, ALT, NOINVERT
+    VK_F3,          ID_SYSCONFIG,           VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 88
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "关于 PEMSys"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PEMSys Version Alpha  1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005",IDC_STATIC,40,54,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+    LTEXT           "LetoSoft.corp - Ice Studio",IDC_STATIC,40,24,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Programmed by Mikewolfli",IDC_STATIC,40,40,119,8,
+                    SS_NOPREFIX
+    LTEXT           "http://www.donews.net/mikewolfli/",IDC_LINK,42,68,139,8
+END
+
+IDD_PEMSYS_FORM DIALOGEX 0, 0, 358, 266
+STYLE DS_SETFONT | WS_CHILD | WS_THICKFRAME
+FONT 9, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_USERID,63,25,87,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NAME,260,25,87,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,63,41,87,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PWCONFIRM,260,41,87,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TELSUBNUM,63,57,87,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MOBILENUM,260,57,87,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_DEPARTMENT,63,73,87,62,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "受限级",IDC_RADIO_LIMIT,"Button",BS_AUTORADIOBUTTON,229,
+                    87,34,10
+    CONTROL         "普通级",IDC_RADIO_COMMON,"Button",BS_AUTORADIOBUTTON,
+                    296,86,34,10
+    CONTROL         "管理级",IDC_RADIO_MANAGE,"Button",BS_AUTORADIOBUTTON,
+                    229,103,34,10
+    CONTROL         "系统级",IDC_RADIO_SYSTEM,"Button",BS_AUTORADIOBUTTON,
+                    297,102,34,10
+    EDITTEXT        IDC_EDIT_REMARK,63,89,87,36,ES_MULTILINE | WS_VSCROLL
+    PUSHBUTTON      "",IDC_BUTTON_SEARCH,168,25,24,18,BS_ICON | BS_FLAT
+    PUSHBUTTON      "",IDC_BUTTON_ADD,23,142,24,18,BS_ICON | BS_FLAT
+    PUSHBUTTON      "",IDC_BUTTON_MODIFY,57,142,24,18,BS_ICON | BS_FLAT
+    PUSHBUTTON      "",IDC_BUTTON_SAVE,90,142,24,18,BS_ICON | BS_FLAT | 
+                    WS_DISABLED
+    PUSHBUTTON      "",IDC_BUTTON_CANCEL,122,142,24,18,BS_ICON | BS_FLAT
+    PUSHBUTTON      "",IDC_BUTTON_DELETE,168,138,24,18,BS_ICON | BS_FLAT
+    PUSHBUTTON      "",IDC_BUTTON_FIRST,214,142,24,18,BS_ICON | BS_FLAT
+    PUSHBUTTON      "",IDC_BUTTON_PREVIOUS,247,142,24,18,BS_ICON | BS_FLAT
+    PUSHBUTTON      "",IDC_BUTTON_NEXT,279,142,24,18,BS_ICON | BS_FLAT
+    PUSHBUTTON      "",IDC_BUTTON_LAST,311,142,24,18,BS_ICON | BS_FLAT
+    CONTROL         """用户信息浏览""",IDC_CUSTOM_GRIDCTRL,"MFCGridCtrl",0x0,
+                    10,183,344,80
+    GROUPBOX        "记录管理",IDC_STATIC_GROUP,9,5,345,175
+    LTEXT           "查询定位",IDC_STATIC_SEARCH,167,49,28,9
+    LTEXT           "用户姓名*",IDC_STATIC_NAME,210,28,32,9
+    LTEXT           "指定密码",IDC_STATIC_PASSWORD,19,44,32,9
+    LTEXT           "确认密码",IDC_STATIC_CONFIRM,210,44,32,9
+    LTEXT           "部门*",IDC_STATIC_DEPART,19,76,32,9
+    LTEXT           "分机号",IDC_STATIC_SUBNUM,19,60,32,9
+    LTEXT           "移动电话",IDC_STATIC_MOBILE,210,60,32,9
+    GROUPBOX        "用户权限",IDC_GROUP1,211,73,136,50
+    LTEXT           "说明",IDC_STATIC_REMARK,19,93,32,9
+    LTEXT           "用户编号*",IDC_STATIC_USERID,19,28,32,9
+    GROUPBOX        "",IDC_GROUP2,15,133,144,42
+    GROUPBOX        "",IDC_GROUP3,203,133,144,42
+    CTEXT           "添加",IDC_STATIC1,26,162,17,9
+    CTEXT           "修改",IDC_STATIC2,59,162,17,9
+    CTEXT           "保存",IDC_STATIC3,93,162,17,9
+    CTEXT           "取消",IDC_STATIC4,126,162,17,9
+    CTEXT           "首条记录",IDC_STATIC5,211,162,28,9
+    CTEXT           "上条记录",IDC_STATIC6,243,162,28,9
+    CTEXT           "下条记录",IDC_STATIC7,278,162,28,9
+    CTEXT           "末条记录",IDC_STATIC8,311,162,28,9
+    CTEXT           "删除",IDC_STATIC_DELETE,172,158,17,9
+    EDITTEXT        IDC_EDIT_DISPLAY,161,121,37,11,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+END
+
+IDR_MAINFRAME DIALOGEX 0, 0, 554, 16
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_USER,23,0,56,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "用户",IDC_STATIC,0,4,16,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_POPEDOM,195,0,56,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "权限",IDC_STATIC,172,4,16,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_DEPARTMENT,109,0,56,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "部门",IDC_STATIC,86,4,16,8,NOT WS_GROUP
+END
+
+IDD_DIALOG_ITEM_ORDERINTAKE DIALOGEX 0, 0, 339, 301
+STYLE DS_SETFONT | WS_CHILD | WS_THICKFRAME
+FONT 9, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_ID,58,18,127,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PROJECTID,58,33,127,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PROJECTIDZS,58,48,127,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PROJECTNAME,58,63,127,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PROJECTNAMEEN,58,78,127,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ADDRESS,58,93,127,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ADDRESSEN,58,108,127,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_SUBCOMPANY,58,123,127,43,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_NUMBER,58,137,127,13,ES_AUTOHSCROLL
+    CONTROL         "整机",IDC_RADIO0,"Button",BS_AUTORADIOBUTTON,11,165,29,
+                    9
+    CONTROL         "部件",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,45,165,29,
+                    9
+    CONTROL         "完整",IDC_CHECK_INTEGRALITY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,150,156,32,8
+    CONTROL         "是",IDC_CHECK_INTEGRALITY2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,150,166,32,8
+    CONTROL         "",IDC_CHECK_CONTRACTRECEIVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,178,10,9
+    CONTROL         "",IDC_DATETIMEPICKER_CONTRACTRECEIVE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,75,175,110,13
+    CONTROL         "",IDC_CHECK_THELATESTAMENDMENT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,195,10,9
+    CONTROL         "",IDC_DATETIMEPICKER_THELATESTAMENDMENT,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_DISABLED | 
+                    WS_TABSTOP,75,191,110,13
+    EDITTEXT        IDC_EDIT_REMARK,58,209,127,36,ES_MULTILINE | WS_VSCROLL
+    PUSHBUTTON      "",IDC_BUTTON_ADD,2,252,29,24,BS_ICON | BS_FLAT
+    PUSHBUTTON      "",IDC_BUTTON_MODIFY,39,252,29,24,BS_ICON | BS_FLAT
+    DEFPUSHBUTTON   "",IDOK,77,252,29,24,BS_ICON | BS_FLAT | WS_DISABLED
+    PUSHBUTTON      "",IDCANCEL,114,252,29,24,BS_ICON | BS_FLAT
+    PUSHBUTTON      "",IDC_BUTTON_DELETE,150,252,29,24,BS_ICON | BS_FLAT
+    PUSHBUTTON      "订单号管理",IDC_BUTTON_CREATORDERID,205,12,114,12
+    PUSHBUTTON      "商务输入",IDC_BUTTON_COMMERCE,205,40,114,12
+    PUSHBUTTON      "查       询",IDC_BUTTON_SEARCH,205,68,114,12
+    PUSHBUTTON      "",IDC_BUTTON_FIRST,217,105,29,24,BS_ICON | BS_FLAT
+    PUSHBUTTON      "",IDC_BUTTON_PREVIOUS,273,105,29,24,BS_ICON | BS_FLAT
+    PUSHBUTTON      "",IDC_BUTTON_NEXT,217,146,29,24,BS_ICON | BS_FLAT
+    PUSHBUTTON      "",IDC_BUTTON_LAST,273,146,29,24,BS_ICON | BS_FLAT
+    GROUPBOX        "项目基本资料",IDC_STATIC_GROUP1,4,5,187,244
+    LTEXT           "分公司*",IDC_STATIC34,11,125,35,10
+    EDITTEXT        IDC_EDIT_INPUTPERSON,246,211,74,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_ITEM_INPUTDATE,246,231,74,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_REPERSON,246,252,74,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_ITEM_REDATE,246,271,74,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "数据操作日志",IDC_STATIC_GROUP2,199,200,131,91
+    LTEXT           "分公司合同号",IDC_STATIC31,11,35,45,10
+    LTEXT           "合同名称*",IDC_STATIC32,10,65,35,10
+    LTEXT           "工地地址",IDC_STATIC33,11,95,35,10
+    LTEXT           "台数",IDC_STATIC36,11,140,35,10
+    LTEXT           "录入人",IDC_STATIC_2,209,215,35,10
+    LTEXT           "录入日期",IDC_STATIC_3,209,234,35,10
+    LTEXT           "修改人",IDC_STATIC_4,209,255,35,10
+    LTEXT           "修改日期",IDC_STATIC_5,209,274,35,10
+    CTEXT           "添加",IDC_STATIC1,9,278,17,9
+    CTEXT           "保存",IDC_STATIC12,83,278,17,9
+    CTEXT           "取消",IDC_STATIC13,120,278,17,9
+    CTEXT           "修改",IDC_STATIC11,46,278,17,9
+    LTEXT           "合同说明",IDC_STATIC37,11,210,35,10
+    CTEXT           "首条记录",IDC_STATIC5,219,133,28,9
+    CTEXT           "上条记录",IDC_STATIC6,273,133,28,9
+    CTEXT           "下条记录",IDC_STATIC7,219,175,28,9
+    CTEXT           "末条记录",IDC_STATIC8,273,175,28,9
+    CTEXT           "删除",IDC_STATIC14,157,278,17,9
+    EDITTEXT        IDC_EDIT_ITEM_DISPLAY,81,289,49,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "合同流水编号*",IDC_STATIC35,11,20,44,10
+    LTEXT           "Address",IDC_STATIC39,11,110,35,10
+    LTEXT           "Contract*",IDC_STATIC40,11,80,35,10
+    LTEXT           "合同类型",IDC_STATIC,11,154,35,10
+    LTEXT           "合同收到是/否完整 ",IDC_STATIC43,81,154,68,10
+    LTEXT           "合同号(中山)",IDC_STATIC38,11,50,45,10
+    LTEXT           "合同收到日期",IDC_STATIC44,11,178,43,10
+    LTEXT           "最近一次合同修改收到日期",IDC_STATIC45,11,189,43,19
+    LTEXT           "合同是/否已签",IDC_STATIC46,81,164,68,10
+END
+
+IDD_DIALOG_LOGIN DIALOGEX 0, 0, 212, 113
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "用户登录"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_LOGINID,118,29,64,12,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_EDIT_PASSWORD,118,59,64,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | WS_GROUP
+    DEFPUSHBUTTON   "登录",IDOK,36,92,50,14
+    PUSHBUTTON      "取消",IDCANCEL,123,92,50,14
+    LTEXT           "编号",IDC_STATIC,82,31,21,10
+    LTEXT           "登录密码",IDC_STATIC,82,61,36,10
+    CONTROL         154,IDC_STATIC,"Static",SS_BITMAP,22,31,43,39
+END
+
+IDD_DIALOG_SYSCONFIG DIALOGEX 0, 0, 311, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "系统配置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,62,74,50,14
+    PUSHBUTTON      "取消",IDCANCEL,196,74,50,14
+    LTEXT           "数据库文件(.mdb):",IDC_STATIC,21,21,72,12
+    EDITTEXT        IDC_EDIT_FILEPATH,99,21,125,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "数据库登录密码:",IDC_STATIC,21,49,72,12
+    EDITTEXT        IDC_EDIT_DATAPASSWORD,99,49,125,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览",IDC_BUTTON_BROWER,239,21,35,12
+END
+
+IDD_DIALOG_RESETPASSWORD DIALOGEX 0, 0, 224, 156
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "密码修改"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PASSWORD,96,58,93,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NEWPASSWORD,96,77,93,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NEWPASSWORDCONFIRM,96,96,93,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,29,135,50,14
+    PUSHBUTTON      "取消",IDCANCEL,139,135,50,14
+    EDITTEXT        IDC_EDIT_USERID,96,20,93,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "编号:",IDC_STATIC,29,20,59,12
+    LTEXT           "用户名:",IDC_STATIC,29,39,59,12
+    LTEXT           "旧密码:",IDC_STATIC,29,58,59,12
+    LTEXT           "新密码:",IDC_STATIC,29,77,59,12
+    LTEXT           "新密码确认:",IDC_STATIC,29,96,59,12
+    LTEXT           "注:用户密码不得大于20位",IDC_STATIC,29,116,133,13
+    EDITTEXT        IDC_EDIT_USERNAME,96,39,93,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+END
+
+IDD_DIALOG_ORDERID DIALOGEX 0, 0, 375, 262
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "订单号管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_COMBO_ORDER_ID,67,17,98,50,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查询定位",IDC_BUTTON_SEARCH,173,17,37,12
+    DEFPUSHBUTTON   "保存",IDOK,17,217,32,25,BS_ICON | BS_FLAT
+    PUSHBUTTON      "退出",IDCANCEL,324,217,32,25,BS_ICON | BS_FLAT
+    EDITTEXT        IDC_EDIT_ORDER_PROJECTNAME,260,17,98,12,ES_AUTOHSCROLL
+    LTEXT           "合同流水编号",IDC_STATIC,15,21,52,8
+    LTEXT           "合同名称",IDC_STATIC,215,20,35,8
+    CTEXT           "保存",IDC_STATIC,22,244,20,10
+    CTEXT           "返回",IDC_STATIC,326,245,29,9
+    CONTROL         "订单号列表",IDC_CUSTOM_ORDERID_GRIDCTRL,"MFCGridCtrl",
+                    WS_TABSTOP,7,50,361,161
+    GROUPBOX        "订单号列表",IDC_STATIC,7,40,361,172,0,WS_EX_TRANSPARENT
+    LTEXT           "作废",IDC_STATIC,252,246,26,9
+    CONTROL         217,IDC_STATIC,"Static",SS_BITMAP,238,245,11,10
+    LTEXT           "未存入",IDC_STATIC,211,246,26,9
+    CONTROL         215,IDC_STATIC,"Static",SS_BITMAP,199,245,11,10
+    LTEXT           "已存入",IDC_STATIC,173,246,24,9
+    CONTROL         214,IDC_STATIC,"Static",SS_BITMAP,161,245,11,10
+    LTEXT           "提示:",IDC_STATIC,134,246,20,9
+END
+
+IDD_PAGE_ITEM_SHAFT DIALOGEX 0, 0, 330, 140
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "井道"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_SHAFT_SHAFTWIDTH,10,23,31,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SHAFT_SHAFTDEPTH,66,23,31,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SHAFT_TH,163,23,31,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SHAFT_OH,221,23,31,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SHAFT_PD,280,23,31,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_SHAFT_COUNTERWEIGHT,52,39,90,39,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SHAFT_COUNTERWEIGHTHEIGHT,221,39,90,12,
+                    ES_AUTOHSCROLL
+    CONTROL         "有",IDC_CHECK_SHAFT_WIDEJAMB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,66,59,81,8
+    COMBOBOX        IDC_COMBO_SHAFT_CWGAUGE,221,55,90,38,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SHAFT_JAMBXC,52,71,90,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    COMBOBOX        IDC_COMBO_SGPOSITION,221,71,90,39,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SHAFT_WJTYPE,52,87,90,42,CBS_DROPDOWN | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SHAFT_CCW,221,87,90,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SHAFT_CS1,112,103,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SHAFT_CWS,112,121,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SHAFT_CS2,281,103,30,12,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,311,107,17,8
+    LTEXT           "井道深SD",IDC_STATIC,66,7,51,8
+    LTEXT           "顶层高度OH",IDC_STATIC,221,7,51,8
+    LTEXT           "mm*",IDC_STATIC,255,27,19,8
+    LTEXT           "提升高度TH",IDC_STATIC,163,7,51,8
+    LTEXT           "mm*",IDC_STATIC,197,27,20,8
+    LTEXT           "底坑深度PD",IDC_STATIC,280,7,46,8
+    LTEXT           "mm",IDC_STATIC,311,27,17,8
+    LTEXT           "井道宽SW",IDC_STATIC,7,7,51,8
+    LTEXT           "mm*",IDC_STATIC,43,27,20,8
+    LTEXT           "mm",IDC_STATIC,100,27,17,8
+    LTEXT           "对重位置",IDC_STATIC,7,43,38,8
+    LTEXT           "对重框高",IDC_STATIC,163,43,38,8
+    LTEXT           "对重导轨距",IDC_STATIC,163,59,48,8
+    LTEXT           "限速器位置",IDC_STATIC,163,75,48,8
+    LTEXT           "是否有大门套",IDC_STATIC,7,59,48,8
+    LTEXT           "大门套型式",IDC_STATIC,7,91,44,8
+    LTEXT           "大门套XC值",IDC_STATIC,7,75,42,8
+    LTEXT           "mm",IDC_STATIC,311,43,17,8
+    LTEXT           "mm",IDC_STATIC,311,59,17,8
+    LTEXT           "mm",IDC_STATIC,145,75,12,8
+    LTEXT           "轿箱内壁至井道壁距离1",IDC_STATIC,7,107,87,8
+    LTEXT           "轿箱内壁至井道壁距离2",IDC_STATIC,163,107,93,8
+    LTEXT           "mm",IDC_STATIC,145,107,12,8
+    LTEXT           "对重导轨中心至井道壁距离",IDC_STATIC,7,123,101,8
+    LTEXT           "绳心距",IDC_STATIC,163,91,38,8
+    LTEXT           "mm",IDC_STATIC,145,125,12,8
+    LTEXT           "mm",IDC_STATIC,311,91,17,8
+END
+
+IDD_PAGE_ITEM_BASICDATA DIALOGEX 0, 0, 330, 140
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "主要技术参数"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_BASICDATA_ELEVATORTYPE,51,7,90,49,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BASICDATA_ELEVATORMODEL,231,7,90,46,
+                    CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BASICDATA_RATEDLOAD,51,20,90,49,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BASICDATA_RATEDSPEED,231,20,90,46,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BASICDATA_CONTROLMODE,51,36,90,46,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BASICDATA_DRAGMODE,231,36,90,40,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_BASICDATA_CONTROLMODEREMARK,7,63,318,30,
+                    ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_BASICDATA_FLOOR,23,98,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_BASICDATA_STATION,69,98,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_BASICDATA_DOOR,117,98,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "电梯类型",IDC_STATIC,7,10,41,8
+    LTEXT           "电梯型号",IDC_STATIC,189,10,41,8
+    LTEXT           "额定载重",IDC_STATIC,7,24,41,8
+    LTEXT           "额定速度",IDC_STATIC,189,24,41,8
+    LTEXT           "曳引方式",IDC_STATIC,189,39,41,8
+    LTEXT           "控制方式",IDC_STATIC,7,39,41,8
+    LTEXT           "控制方式备注",IDC_STATIC,7,51,95,8
+    LTEXT           "层",IDC_STATIC,7,103,10,8
+    LTEXT           "站",IDC_STATIC,53,103,10,8
+    LTEXT           "门",IDC_STATIC,101,103,10,8
+    LTEXT           "有/无贯通门",IDC_STATIC,7,120,46,8
+    CONTROL         "有",IDC_CHECK_BASICDATA_THROUGH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,67,120,32,8
+    LTEXT           "停站名",IDC_STATIC,190,103,25,8
+    EDITTEXT        IDC_EDIT_BASICDATA_STOPNAME,231,98,90,12,ES_AUTOHSCROLL
+END
+
+IDD_PAGE_ITEM_CAR DIALOGEX 0, 0, 330, 140
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "轿厢"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "主操作盘位置",IDC_STATIC,6,115,33,19
+    COMBOBOX        IDC_COMBO_CAR_HOSTCONROLPANEL,50,118,90,48,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "轿厢宽",IDC_STATIC,6,9,50,8
+    EDITTEXT        IDC_EDIT_CAR_CW,50,5,90,12,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,151,9,12,8
+    LTEXT           "轿厢深",IDC_STATIC,178,9,52,8
+    EDITTEXT        IDC_EDIT_CAR_CD,213,5,90,12,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,307,9,12,8
+    LTEXT           "开门型式",IDC_STATIC,6,53,52,8
+    COMBOBOX        IDC_COMBO_CAR_OPENTYPE,50,49,90,49,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CAR_OFFSET,213,71,90,12,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,307,75,12,8
+    LTEXT           "开门宽",IDC_STATIC,6,97,52,8
+    EDITTEXT        IDC_EDIT_CAR_DW,50,93,90,12,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,151,97,12,8
+    LTEXT           "开门高",IDC_STATIC,178,97,38,8
+    EDITTEXT        IDC_EDIT_CAR_DH,213,93,90,12,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,307,97,12,8
+    LTEXT           "轿厢高",IDC_STATIC,6,31,33,8
+    EDITTEXT        IDC_EDIT_CAR_CH,50,27,90,12,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,151,31,12,8
+    LTEXT           "开门中心相对于轿厢中心的偏移量",IDC_STATIC,6,75,122,8
+    COMBOBOX        IDC_COMBO_CAR_OFFSETDIR,137,71,40,50,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PAGE_ITEM_UPHOLSTER DIALOGEX 0, 0, 330, 140
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "轿厢装潢"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_UPHOLSTER_CEILING,72,14,81,49,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_UPHOLSTER_FRONTWALL,245,14,81,49,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_UPHOLSTER_SIDEWALL,72,34,81,49,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_UPHOLSTER_REARWALL,245,34,81,49,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_UPHOLSTER_SIDEHANDRAIL,72,61,81,49,
+                    CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_UPHOLSTER_REARHANDRAIL,245,61,81,49,
+                    CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_UPHOLSTER_GLASSTYPE,72,93,81,49,CBS_DROPDOWN | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_UPHOLSTER_GLASSPOSITION,245,93,81,49,
+                    CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_UPHOLSTER_DOOR,72,115,81,49,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_UPHOLSTER_FLOOR,245,115,81,49,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "轿厢吊顶",IDC_STATIC,11,18,41,8
+    LTEXT           "前侧轿壁材质",IDC_STATIC,171,18,53,8
+    LTEXT           "两侧轿壁材质",IDC_STATIC,11,38,49,8
+    LTEXT           "后侧轿壁材质",IDC_STATIC,171,38,53,8
+    LTEXT           "两侧扶手型式",IDC_STATIC,11,65,49,8
+    CONTROL         "扶手",IDC_CHECK_UPHOLSTER_HANDRAIL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,53,41,8
+    LTEXT           "后侧扶手型式",IDC_STATIC,171,65,49,8
+    CONTROL         "镜子",IDC_CHECK_UPHOLSTER_GLASSPOSITION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,1,80,41,13
+    LTEXT           "镜子位置",IDC_STATIC,171,97,49,8
+    LTEXT           "轿门材质",IDC_STATIC,11,119,49,8
+    LTEXT           "地板材质",IDC_STATIC,171,119,49,8
+    LTEXT           "镜子型式",IDC_STATIC,11,97,49,8
+END
+
+IDD_PAGE_ITEM_ELECTRIC DIALOGEX 0, 0, 330, 140
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "电气"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_ELECTRIC_CONTROLLER,54,14,90,53,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "有",IDC_CHECK_ELECTRIC_DISAPANEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,54,40,24,10
+    CONTROL         "有",IDC_CHECK_ELECTRIC_VIDEOCABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,216,40,24,10
+    COMBOBOX        IDC_COMBO_ELECTRIC_CALLBOARDTYPE,54,62,90,53,
+                    CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ELECTRIC_CALLBOARDTYPEREMARK,216,62,90,12,
+                    ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_ELECTRIC_SCREENMAGIC,54,86,90,53,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ELECTRIC_SCREENMAGICREMARK,216,86,90,12,
+                    ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_ELECTRIC_PUSHBUTTON,54,113,90,53,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "电梯功能表",IDC_BUTTON_ELECTRIC_FUNCTION,216,14,81,12
+    LTEXT           "控制系统类型",IDC_STATIC,3,18,49,8
+    LTEXT           "残障COP",IDC_STATIC,3,42,49,8
+    LTEXT           "按钮型式",IDC_STATIC,3,116,49,8
+    LTEXT           "视频线",IDC_STATIC,172,42,49,8
+    LTEXT           "召唤箱型号",IDC_STATIC,3,66,49,8
+    LTEXT           "召唤显示备注",IDC_STATIC,172,63,29,20
+    LTEXT           "光幕",IDC_STATIC,3,90,49,8
+    LTEXT           "光幕备注",IDC_STATIC,172,90,49,8
+END
+
+IDD_DIALOG_ITEM_FUNCTION DIALOGEX 0, 0, 350, 340
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "电梯功能表"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "电梯功能表",IDC_CUSTOM_FUNCTION_GRID,"MFCGridCtrl",
+                    WS_TABSTOP,7,21,332,277
+    PUSHBUTTON      "返   回",IDCANCEL,264,305,50,14
+    DEFPUSHBUTTON   "保   存",IDOK,22,305,50,14
+    CONTROL         "显示标准功能",IDC_CHECK_FUNCTION_STANDARD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,10,72,8
+    LTEXT           "电梯型号",IDC_STATIC,234,10,41,8
+    EDITTEXT        IDC_EDIT_FUNCTION_ELEVATORMODEL,278,6,53,12,
+                    ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "提示:",IDC_STATIC,7,322,20,9
+    CONTROL         214,IDC_STATIC,"Static",SS_BITMAP,35,321,11,10
+    CONTROL         215,IDC_STATIC,"Static",SS_BITMAP,73,321,11,10
+    LTEXT           "已存入",IDC_STATIC,46,322,24,9
+    LTEXT           "未存入",IDC_STATIC,83,322,26,9
+    LTEXT           "控制系统类型",IDC_STATIC,85,10,55,8
+    EDITTEXT        IDC_EDIT_FUNCTION_CONTROLLER,151,6,53,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "标准功能",IDC_STATIC,123,322,44,9
+    CONTROL         217,IDC_STATIC,"Static",SS_BITMAP,111,321,11,10
+END
+
+IDD_DIALOG_ITEM_EXCEL DIALOGEX 0, 0, 420, 176
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_EXCEL_MARKID,85,15,111,43,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查询定位",IDC_BUTTON_EXCEL_SEARCH,220,15,35,27,BS_ICON | 
+                    BS_MULTILINE | BS_FLAT
+    LTEXT           "合同订单号*",IDC_STATIC,16,19,45,8
+    LISTBOX         IDC_LIST_EXCEL_ORDERLIST,279,15,111,35,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "合同名称",IDC_STATIC,16,50,41,8
+    EDITTEXT        IDC_EDIT_EXCEL_PROJECTNAME,85,46,111,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "相同配置订单列表",IDC_STATIC,277,7,78,8
+    GROUPBOX        "",IDC_STATIC,6,1,405,129
+    CTEXT           "查询定位",IDC_STATIC,220,46,35,8
+    LTEXT           "电梯型号",IDC_STATIC,16,81,41,8
+    EDITTEXT        IDC_EDIT_EXCEL_ELEVATORMODEL,85,77,111,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "额定速度",IDC_STATIC8,220,112,35,8
+    EDITTEXT        IDC_EDIT_EXCEL_RATEDLOAD,85,108,94,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_EXCEL_RATEDSPEED,281,108,94,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Excel输出",IDC_BUTTON_EXCEL_OUTPUT,16,143,79,15
+    PUSHBUTTON      "打开目标文件",IDC_BUTTON_EXCEL_OPEN,115,143,79,15
+    PUSHBUTTON      "文件路径设置",IDC_BUTTON_EXCEL_FILEPATH,313,143,79,15
+    PUSHBUTTON      "打开模板文件",IDC_BUTTON_EXCEL_OPEN2,214,143,79,15
+    PUSHBUTTON      "查询定位",IDC_BUTTON_EXCEL_CANCEL,220,58,35,27,BS_ICON | 
+                    BS_MULTILINE | BS_FLAT
+    CTEXT           "取消",IDC_STATIC,220,89,35,8
+    LTEXT           "额定载重",IDC_STATIC42,16,112,41,8
+    CTEXT           "kg",IDC_STATIC,182,112,14,8
+    CTEXT           "m/s",IDC_STATIC,376,112,14,8
+    CONTROL         "输出同时打开目标文件",IDC_CHECK_EXCEL_OPEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,279,78,111,11
+END
+
+IDD_DIALOG_EXCEL_PATH DIALOGEX 0, 0, 301, 104
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "文件路径设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,33,81,50,14
+    PUSHBUTTON      "取消",IDCANCEL,222,81,50,14
+    LTEXT           "模板文件路径:",IDC_STATIC,34,31,52,12
+    EDITTEXT        IDC_EDIT_FILEPATH_TEMPLATE,113,31,109,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_BROWER_TEMPLATE,237,31,35,12,0,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "输出目标文件路径:",IDC_STATIC,33,54,77,12
+    EDITTEXT        IDC_EDIT_FILEPATH_OBJECT,113,54,109,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_BROWER_OBJECT,237,54,35,12,0,
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_DIALOG_ITEM_DATAINPUT DIALOGEX 0, 0, 450, 320
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_COMMERCE_ID,66,18,109,50,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_DATAINPUT_PROJECTNAME,227,18,109,12,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DATAINPUT_PROJECTNAMEEN,66,34,109,12,
+                    ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_DATAINPUT_ORDERID,66,64,109,44,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查   询",IDC_BUTTON_DATAINPUT_SEARCH,351,18,61,12,
+                    BS_MULTILINE
+    PUSHBUTTON      "相同资源拷贝",IDC_BUTTON_SAMECOPY,351,63,61,12
+    PUSHBUTTON      "Button2",IDC_BUTTON_DATAINPUT_FIRST,367,90,28,22,
+                    BS_ICON | BS_FLAT
+    PUSHBUTTON      "Button2",IDC_BUTTON_DATAINPUT_PREVIOUS,407,90,28,22,
+                    BS_ICON | BS_FLAT
+    PUSHBUTTON      "Button2",IDC_BUTTON_DATAINPUT_NEXT,367,135,28,22,
+                    BS_ICON | BS_FLAT
+    PUSHBUTTON      "Button2",IDC_BUTTON_DATAINPUT_LAST,407,135,28,22,
+                    BS_ICON | BS_FLAT
+    CTEXT           "下条记录",IDC_STATIC,365,161,34,8
+    CTEXT           "末条记录",IDC_STATIC,407,162,34,8
+    DEFPUSHBUTTON   "确定",IDOK,367,201,28,22,BS_ICON | BS_FLAT
+    PUSHBUTTON      "取消",IDCANCEL,407,201,28,22,BS_ICON | BS_FLAT
+    PUSHBUTTON      "Button2",IDC_BUTTON_DATAINPUT_DELETE,385,241,28,22,
+                    BS_ICON | BS_FLAT
+    EDITTEXT        IDC_EDIT_REMARK,10,249,339,25,ES_MULTILINE | WS_VSCROLL
+    LTEXT           "订单号*",IDC_STATIC,9,68,37,8
+    GROUPBOX        "数据操作日志",IDC_STATIC,10,280,340,38
+    EDITTEXT        IDC_EDIT_DATAINPUT_INPUTPERSON,64,286,87,12,
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_DATAINPUT_INPUTDATE,64,302,87,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_DATAINPUT_REPERSON,249,286,87,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_DATAINPUT_REDATE,249,302,87,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "录入人",IDC_STATIC,20,289,41,8
+    LTEXT           "录入日期",IDC_STATIC,20,305,41,8
+    LTEXT           "修改人",IDC_STATIC,199,289,41,8
+    LTEXT           "修改日期",IDC_STATIC,199,305,41,8
+    EDITTEXT        IDC_EDIT_DATAINPUT_DISPLAY,379,287,42,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "首条记录",IDC_STATIC,363,117,34,8
+    CTEXT           "上条记录",IDC_STATIC,407,116,34,8
+    CTEXT           "取消",IDC_STATIC,411,228,19,8
+    CTEXT           "保存",IDC_STATIC,371,228,19,8
+    CTEXT           "删除",IDC_STATIC,391,268,19,8
+    EDITTEXT        IDC_EDIT_DATAINPUT_ELEVATORID,227,64,109,12,
+                    ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "梯号",IDC_STATIC,188,68,24,8
+    LTEXT           "备注",IDC_STATIC,2,239,73,8
+    GROUPBOX        "合同信息*",IDC_STATIC,2,7,422,44
+    LTEXT           "合同流水编号",IDC_STATIC,9,22,52,8
+    LTEXT           "合同名称",IDC_STATIC,188,22,35,8
+    LTEXT           "Contract(EN)",IDC_STATIC,9,34,48,12
+    GROUPBOX        "订单信息",IDC_STATIC,2,55,422,28
+    LTEXT           "台数",IDC_STATIC,188,38,35,8
+    EDITTEXT        IDC_COMMERCE_EDIT_COMMERCE_NUM,227,34,109,12,
+                    ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_COMMERCE DIALOGEX 0, 0, 420, 326
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_RTLREADING
+CAPTION "商务输入"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_COMMERCE_ID,67,18,129,50,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_COMMERCE_PROJECTNAME,261,18,129,12,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMMERCE_EDIT_CONTRACTEN,67,34,129,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMMERCE_EDIT_COMMERCE_NUM,261,34,29,12,
+                    ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "查 询",IDC_BUTTON_COMMERCE_SEARCH,321,34,61,12
+    COMBOBOX        IDC_COMBO_COMMERCE_ORDERID,67,64,129,50,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_COMMERCE_ELEVATORID,261,64,29,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "相同资源拷贝",IDC_BUTTON_SAMECOPY,321,66,61,12
+    PUSHBUTTON      "Button2",IDC_BUTTON_COMMERCE_FIRST,336,95,28,22,BS_ICON | 
+                    BS_FLAT
+    PUSHBUTTON      "Button2",IDC_BUTTON_COMMERCE_PREVIOUS,376,95,28,22,
+                    BS_ICON | BS_FLAT
+    PUSHBUTTON      "Button2",IDC_BUTTON_COMMERCE_NEXT,336,140,28,22,BS_ICON | 
+                    BS_FLAT
+    PUSHBUTTON      "Button2",IDC_BUTTON_COMMDERCE_LAST,376,140,28,22,
+                    BS_ICON | BS_FLAT
+    DEFPUSHBUTTON   "确定",IDOK,336,195,28,22,BS_ICON | BS_FLAT
+    PUSHBUTTON      "取消",IDCANCEL,376,195,28,22,BS_ICON | BS_FLAT
+    PUSHBUTTON      "Button2",IDC_BUTTON_COMMERCE_DELETE,336,235,28,22,
+                    BS_ICON | BS_FLAT
+    PUSHBUTTON      "Button2",IDC_BUTTON_COMMERCE_BACK,376,235,28,22,BS_ICON | 
+                    BS_FLAT
+    EDITTEXT        IDC_EDIT_REMARK,11,257,318,26,ES_MULTILINE | WS_VSCROLL
+    GROUPBOX        "合同信息*",IDC_STATIC,3,7,405,44
+    LTEXT           "合同流水编号*",IDC_STATIC,10,22,52,8
+    LTEXT           "合同名称*",IDC_STATIC,217,22,35,8
+    LTEXT           "Contract(EN)*",IDC_STATIC40,10,34,48,12
+    GROUPBOX        "订单信息",IDC_STATIC,3,55,405,28
+    LTEXT           "订单号",IDC_STATIC,10,66,52,8
+    LTEXT           "梯号",IDC_STATIC,217,68,35,8
+    LTEXT           "台数",IDC_STATIC,217,38,35,8
+    EDITTEXT        IDC_EDIT_COMMERCE_DISPLAY,353,288,42,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "首条记录",IDC_STATIC,332,121,34,8
+    CTEXT           "上条记录",IDC_STATIC,374,121,34,8
+    CTEXT           "下条记录",IDC_STATIC,332,167,34,8
+    CTEXT           "末条记录",IDC_STATIC,374,167,34,8
+    CTEXT           "清屏",IDC_STATIC,380,222,19,8
+    CTEXT           "保存",IDC_STATIC,342,222,19,8
+    CTEXT           "删除",IDC_STATIC,342,262,19,8
+    CTEXT           "返回",IDC_STATIC,380,262,19,8
+    GROUPBOX        "数据操作日志",IDC_STATIC,3,286,340,38
+    EDITTEXT        IDC_EDIT_COMMERCE_INPUTPERSON,57,292,87,12,
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_COMMERCE_INPUTDATE,57,308,87,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_COMMERCE_REPERSON,243,292,87,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_COMMERCE_REDATE,243,308,87,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "录入人",IDC_STATIC,13,294,41,8
+    LTEXT           "录入日期",IDC_STATIC,13,310,41,8
+    LTEXT           "修改人",IDC_STATIC,193,294,41,8
+    LTEXT           "修改日期",IDC_STATIC,193,310,41,8
+    LTEXT           "备注",IDC_STATIC,3,246,73,8
+END
+
+IDD_PAGE_COMMERCE_PRICE DIALOGEX 0, 0, 320, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "价格"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_AMOUNT,165,18,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FREIGHTINSURANCE,165,68,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MATERIALAMOUNT,165,118,65,12,ES_AUTOHSCROLL
+    LTEXT           "合同价格￥(元)",IDC_STATIC,75,20,65,10
+    LTEXT           "设备价格￥(元)",IDC_STATIC,75,120,65,10
+    LTEXT           "运保费￥(元)",IDC_STATIC,75,70,89,10
+END
+
+IDD_PAGE_COMMERCE_CONTRACT_FOLLOWUP DIALOGEX 0, 0, 320, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "项目追踪"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_CHECK_GADRECEIVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,93,12,12,10
+    CONTROL         "",IDC_DATETIMEPICKER_GADRECEIVE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,113,7,65,15
+    CONTROL         "",IDC_CHECK_THELATESTAMENDMENT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,93,42,12,10
+    CONTROL         "",IDC_DATETIMEPICKER_TLAMENDMENT,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,113,37,65,15
+    EDITTEXT        IDC_EDIT_AMENDMENTREMARK,200,16,103,56,ES_MULTILINE | 
+                    ES_READONLY | WS_VSCROLL
+    CONTROL         "",IDC_CHECK_CONFIRMATIONSHEETRELEASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,93,72,12,10
+    CONTROL         "",IDC_DATETIMEPICKER_CSRELEASE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,113,67,65,15
+    CONTROL         "",IDC_CHECK_CONFIRMATIONSHEETREPLY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,93,102,12,10
+    CONTROL         "",IDC_DATETIMEPICKER_CSREPLY,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,113,97,65,15
+    EDITTEXT        IDC_EDIT_REPLYREMARK,200,86,103,56,ES_MULTILINE | 
+                    ES_READONLY | WS_VSCROLL
+    CONTROL         "",IDC_CHECK_ASSESSMENTCOMPLETE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,93,132,12,10
+    CONTROL         "",IDC_DATETIMEPICKER_ASSESSMENTCDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,113,127,65,15
+    LTEXT           "GAD收到日期",IDC_STATIC,17,12,65,10
+    CTEXT           "最近一次GAD修改日期",IDC_STATIC,17,34,54,18
+    LTEXT           "修改记录",IDC_STATIC,200,7,71,10
+    CTEXT           "合同技术问题反馈单发布日期",IDC_STATIC,17,66,57,16
+    CTEXT           "合同技术问题反馈单回复日期",IDC_STATIC,17,96,57,16
+    LTEXT           "回复记录",IDC_STATIC,200,74,71,8
+    LTEXT           "评审完成日期",IDC_STATIC,17,132,57,10
+END
+
+IDD_PAGE_COMMERCE_PRODUCTION DIALOGEX 0, 0, 320, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "排产"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_CHECK_PRODUCTIONRECEIVED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,76,14,17,10
+    CONTROL         "",IDC_DATETIMEPICKER_PRODUCTIONRECEIVEDDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_DISABLED | 
+                    WS_TABSTOP,96,11,65,13
+    CONTROL         "",IDC_CHECK_PDELIVERYDATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,76,31,17,10
+    CONTROL         "",IDC_DATETIMEPICKER_PDELIVERYDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,96,28,65,13
+    EDITTEXT        IDC_EDIT_PDELIVERYREMARK,174,37,134,27,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    CONTROL         "",IDC_CHECK_BATCHCHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,76,65,10,10
+    CONTROL         "",IDC_DATETIMEPICKER_AMDELIVERYDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,95,62,65,13
+    EDITTEXT        IDC_EDIT_PSECDELIVERYDATE,177,77,134,27,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    CONTROL         "",IDC_CHECK_PTHIRDDELIVERYDATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,76,105,17,10
+    CONTROL         "",IDC_DATETIMEPICKER_PTHIRDDELIVERYDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_DISABLED | 
+                    WS_TABSTOP,95,102,65,13
+    EDITTEXT        IDC_EDIT_PTHIRDDELIVERYDATE,178,117,134,27,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    CONTROL         "",IDC_CHECK_PLANTPRODUCTIONDATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,229,14,17,10
+    CONTROL         "",IDC_DATETIMEPICKER_PLANTPRODUCTIONDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_DISABLED | 
+                    WS_TABSTOP,249,11,65,13
+    LTEXT           "工厂排产日期",IDC_STATIC,167,14,65,10
+    LTEXT           "预计第一批发货期",IDC_STATIC,7,31,66,8
+    LTEXT           "预计第二批发货期",IDC_STATIC,7,65,64,10
+    LTEXT           "预计第三批发货期",IDC_STATIC,7,105,65,10
+    LTEXT           "第三批发货说明",IDC_STATI,169,105,58,10
+    CTEXT           "排产通知单收到日期",IDC_STATIC,7,7,57,17
+    LTEXT           "第一批发货说明",IDC_STATIC,168,25,58,10
+    LTEXT           "第二批发货说明",IDC_STATIC,167,65,58,10
+END
+
+IDD_PAGE_ITEM_PARTS DIALOGEX 0, 0, 330, 140
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "部件"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_TRACTION,47,13,100,35,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CARRAIL,217,13,100,43,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ENCODE,47,31,100,43,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CWRAIL,217,31,100,50,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CAR_DOORSYSTEM,47,49,100,50,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SAFETY,217,49,100,42,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SPEEDGOVERNOR,47,67,100,41,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BUFFER,217,67,100,41,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_NONSTANDARDREMARK,19,109,298,27,ES_MULTILINE | 
+                    WS_DISABLED | WS_VSCROLL
+    LTEXT           "曳引机",IDC_STATIC,15,15,35,10
+    LTEXT           "编码器",IDC_STATIC,15,35,39,8
+    LTEXT           "门系统",IDC_STATIC,15,53,32,8
+    LTEXT           "限速器",IDC_STATIC,15,71,31,8
+    LTEXT           "安全钳 ",IDC_STATIC,165,53,29,8
+    LTEXT           "缓冲器",IDC_STATIC,165,71,29,8
+    LTEXT           "轿厢导轨",IDC_STATIC,165,17,39,8
+    LTEXT           "对重导轨",IDC_STATIC,165,35,39,8
+    CONTROL         "非标",IDC_CHECK_NONSTANDARD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,86,60,10
+    LTEXT           "非标内容",IDC_STATIC,15,98,57,8
+END
+
+IDD_DIALOG_ITEM_COMMERCESEARCH DIALOGEX 0, 0, 420, 320
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "自定义1",IDC_CUSTOM2,"MFCGridCtrl",WS_TABSTOP,15,20,299,
+                    114
+    PUSHBUTTON      "查询条件定制",IDC_BUTTON_SEARCHCONFIGURE,338,7,76,15
+    DEFPUSHBUTTON   "查   询",IDOK,338,60,76,15
+    PUSHBUTTON      "清   屏",IDCANCEL,338,113,76,15
+    PUSHBUTTON      "另存为...",IDC_BUTTON_SAVEAS,7,147,76,15
+    PUSHBUTTON      "打印预览",IDC_BUTTON_PRINTVIEW,86,147,76,15
+    PUSHBUTTON      "打   印",IDC_BUTTON_PRINT,165,147,76,15
+    PUSHBUTTON      "显示设置",IDC_BUTTON_PRINTCONFIGURE,244,147,76,15
+    GROUPBOX        "查询条件",IDC_STATIC,7,7,313,133
+    CONTROL         "自定义1",IDC_CUSTOM_DISPLAY,"MFCGridCtrl",WS_TABSTOP,7,
+                    169,407,143
+    LTEXT           "记录总数",IDC_STATIC,324,153,36,8
+    EDITTEXT        IDC_EDIT_TOTAL,359,150,55,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_PRINTCONFIGURE DIALOGEX 0, 0, 170, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "显示设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,7,177,50,14
+    PUSHBUTTON      "返回",IDCANCEL,116,177,50,14
+    CONTROL         "自定义1",IDC_CUSTOM1,"MFCGridCtrl",WS_TABSTOP,7,7,159,
+                    164
+END
+
+IDD_DIALOG_SAMECOPY DIALOGEX 0, 0, 368, 146
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确   定",IDOK,16,81,50,14
+    PUSHBUTTON      "返   回",IDCANCEL,16,119,50,14
+    LTEXT           "源订单号",IDC_STATIC,16,22,43,11
+    EDITTEXT        IDC_EDIT_SOURCE,62,20,113,12,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST_TARGET,191,21,170,112,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "目标订单列表",IDC_STATIC,191,7,49,11
+    LTEXT           "目标订单号",IDC_STATIC,16,46,43,11
+    COMBOBOX        IDC_COMBO1,62,46,113,60,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添   加->>",IDC_BUTTON_ADD,125,81,50,14
+    PUSHBUTTON      "<<-移   除",IDC_BUTTON_REMOVE,125,119,50,14
+END
+
+IDD_DIALOG_REGISTER DIALOGEX 0, 0, 237, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "注册"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,7,74,50,14
+    PUSHBUTTON      "取消",IDCANCEL,180,74,50,14
+    EDITTEXT        IDC_EDIT_FIRST,7,53,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SECOND,71,53,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_THIRD,135,53,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FOURTH,199,53,30,14,ES_AUTOHSCROLL
+    LTEXT           "请输入序列号:",IDC_STATIC,7,39,84,10
+    LTEXT           "用户名(16位以内字符)",IDC_STATIC,7,7,80,11
+    EDITTEXT        IDC_EDIT4,7,18,51,15,ES_AUTOHSCROLL
+END
+
+IDD_PAGE_COMMERCE_DELIVERY DIALOGEX 0, 0, 320, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "发运"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_CHECK_DELIVERYRECEIVEDATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,78,14,17,9
+    CONTROL         "",IDC_DATETIMEPICKER_DELIVERYRECEIVEDDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_DISABLED | 
+                    WS_TABSTOP,98,10,65,13
+    CONTROL         "",IDC_CHECK_ADELIVERY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,78,32,12,9
+    CONTROL         "",IDC_DATETIMEPICKER_ADELIVERYDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,98,28,65,13
+    EDITTEXT        IDC_EDIT_ADELIVERYREMARK,183,43,125,26,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    CONTROL         "",IDC_CHECK_BATCHDELIVERY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,78,69,17,9
+    CONTROL         "",IDC_DATETIMEPICKER_ASECDELIVERYDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,98,65,65,13
+    EDITTEXT        IDC_EDIT_ASECDELIVERYREMARK,183,81,125,26,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    CONTROL         "",IDC_CHECK_ATHIRDDELIVERYREMARK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,78,108,17,9
+    CONTROL         "",IDC_DATETIMEPICKER_ATHIRDDELIVERYREMARK,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_DISABLED | 
+                    WS_TABSTOP,98,104,65,13
+    EDITTEXT        IDC_EDIT_ATHIRDDELIVERYREMARK,183,119,125,26,
+                    ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    LTEXT           "第三批发货说明",IDC_STATIC,176,107,58,10
+    LTEXT           "是否已经发运",IDC_STATIC,176,13,71,10
+    LTEXT           "第一批发货期",IDC_STATIC,16,31,54,10
+    CONTROL         "已发运",IDC_CHECK_DELIVERYDONE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,238,10,60,13
+    CTEXT           "发运通知单收到日期",IDC_STATIC,16,7,58,16
+    LTEXT           "第二批发货期",IDC_STATIC,16,70,58,8
+    LTEXT           "第三批发货期",IDC_STATIC,16,107,58,10
+    LTEXT           "第一批发货说明",IDC_STATIC,176,31,66,10
+    LTEXT           "第二批发货说明",IDC_STATIC,176,70,58,8
+END
+
+IDD_PAGE_COMMERCE_PAYMENT DIALOGEX 0, 0, 320, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "付款"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_DISSCOUNT,165,21,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INTERNALPRICE,165,48,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ACTUALGETFREIGHTINSURANCE,165,75,65,12,
+                    ES_AUTOHSCROLL
+    CONTROL         "",IDC_CHECK_PORELEASE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,147,103,9,11
+    CONTROL         "",IDC_DATETIMEPICKER_PORELEASE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,165,102,65,12
+    CONTROL         "",IDC_CHECK_PORETURN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,147,130,9,11
+    CONTROL         "",IDC_DATETIMEPICKER_PORETURN,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,165,129,65,12
+    LTEXT           "内部价格￥(元)",IDC_STATIC,75,50,65,10
+    LTEXT           "PO发布日期",IDC_STATIC,75,104,65,10
+    LTEXT           "PO返回日期",IDC_STATIC,75,131,65,10
+    LTEXT           "折扣￥(元)",IDC_STATIC,75,23,65,10
+    LTEXT           "实收运保费￥(元)",IDC_STATIC,75,77,65,10
+END
+
+IDD_DIALOG12 DIALOGEX 0, 0, 375, 262
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "订单号管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,35,201,50,37,BS_ICON | BS_FLAT
+    PUSHBUTTON      "取消",IDCANCEL,263,146,46,34,BS_ICON | BS_FLAT
+    LTEXT           "提示:",IDC_STATIC,121,239,20,9
+    CONTROL         214,IDC_STATIC,"Static",SS_BITMAP,149,238,11,10
+    CONTROL         215,IDC_STATIC,"Static",SS_BITMAP,187,238,11,10
+    LTEXT           "已存入",IDC_STATIC,161,239,24,9
+    LTEXT           "未存入",IDC_STATIC,199,239,26,9
+    LTEXT           "作废",IDC_STATIC,239,239,26,9
+    CONTROL         217,IDC_STATIC,"Static",SS_BITMAP,225,238,11,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "PEMSys.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "PEMSys.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "翻译", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PEMSYS_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 356
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 263
+    END
+
+    IDD_DIALOG_ITEM_ORDERINTAKE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 336
+        VERTGUIDE, 330
+    END
+
+    IDD_DIALOG_SYSCONFIG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_DIALOG_RESETPASSWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_DIALOG_ORDERID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 368
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_PAGE_ITEM_SHAFT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_PAGE_ITEM_BASICDATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_PAGE_ITEM_CAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 326
+    END
+
+    IDD_PAGE_ITEM_UPHOLSTER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 326
+        TOPMARGIN, 7
+    END
+
+    IDD_PAGE_ITEM_ELECTRIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 327
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG_ITEM_FUNCTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 331
+    END
+
+    IDD_DIALOG_ITEM_EXCEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 411
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG_EXCEL_PATH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_DIALOG_ITEM_DATAINPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 441
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 318
+    END
+
+    IDD_DIALOG_COMMERCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 408
+        TOPMARGIN, 7
+    END
+
+    IDD_PAGE_COMMERCE_PRICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+    END
+
+    IDD_PAGE_COMMERCE_CONTRACT_FOLLOWUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_PAGE_COMMERCE_PRODUCTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_PAGE_ITEM_PARTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 324
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_DIALOG_ITEM_COMMERCESEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 414
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 312
+    END
+
+    IDD_DIALOG_PRINTCONFIGURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_DIALOG_SAMECOPY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_DIALOG_REGISTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_PAGE_COMMERCE_DELIVERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+    END
+
+    IDD_PAGE_COMMERCE_PAYMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 316
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG12, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 375
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_NODRAGGING          CURSOR                  "res\\NODRAGGI.CUR"
+IDC_DRAGGING            CURSOR                  "res\\DRAGGING.CUR"
+IDC_HANDCUR             CURSOR                  "res\\ICR_HAND.CUR"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PEMSYS_FORM DLGINIT
+BEGIN
+    IDC_COMBO_DEPARTMENT, 0x403, 7, 0
+0xdcb9, 0xedc0, 0xe3b2, "\000" 
+    IDC_COMBO_DEPARTMENT, 0x403, 7, 0
+0xefce, 0xf7c1, 0xbfb2, "\000" 
+    IDC_COMBO_DEPARTMENT, 0x403, 7, 0
+0xd0d0, 0xfed5, 0xbfb2, "\000" 
+    IDC_COMBO_DEPARTMENT, 0x403, 11, 0
+0xcfba, 0xaccd, 0xb4d6, 0xd0d0, 0xbfb2, "\000" 
+    IDC_COMBO_DEPARTMENT, 0x403, 7, 0
+0xcad6, 0xbfc1, 0xbfb2, "\000" 
+    IDC_COMBO_DEPARTMENT, 0x403, 7, 0
+0xbcbc, 0xf5ca, 0xbfb2, "\000" 
+    0
+END
+
+IDD_PAGE_ITEM_BASICDATA DLGINIT
+BEGIN
+    IDC_COMBO_BASICDATA_ELEVATORTYPE, 0x403, 24, 0
+0xcbb3, 0xcdbf, 0xddcc, 0x2028, 0x6150, 0x7373, 0x6e65, 0x6567, 0x2072, 
+0x694c, 0x7466, 0x0029, 
+    IDC_COMBO_BASICDATA_ELEVATORTYPE, 0x403, 21, 0
+0xa1b2, 0xb2b4, 0xddcc, 0x4228, 0x6465, 0x6964, 0x676e, 0x4c20, 0x6669, 
+0x2974, "\000" 
+    IDC_COMBO_BASICDATA_ELEVATORTYPE, 0x403, 19, 0
+0xf5bb, 0xddcc, 0x4628, 0x6572, 0x6769, 0x7468, 0x4c20, 0x6669, 0x2974, 
+"\000" 
+    IDC_COMBO_BASICDATA_ELEVATORTYPE, 0x403, 23, 0
+0xdbb9, 0xe2b9, 0xddcc, 0x5028, 0x6e61, 0x726f, 0x6d61, 0x6369, 0x4c20, 
+0x6669, 0x2974, "\000" 
+    IDC_COMBO_BASICDATA_ELEVATORMODEL, 0x403, 5, 0
+0x4554, 0x452d, "\000" 
+    IDC_COMBO_BASICDATA_ELEVATORMODEL, 0x403, 6, 0
+0x4554, 0x452d, 0x0053, 
+    IDC_COMBO_BASICDATA_ELEVATORMODEL, 0x403, 6, 0
+0x4554, 0x472d, 0x004c, 
+    IDC_COMBO_BASICDATA_ELEVATORMODEL, 0x403, 7, 0
+0x4554, 0x472d, 0x534c, "\000" 
+    IDC_COMBO_BASICDATA_ELEVATORMODEL, 0x403, 7, 0
+0x4554, 0x4d2d, 0x4c52, "\000" 
+    IDC_COMBO_BASICDATA_ELEVATORMODEL, 0x403, 8, 0
+0x4554, 0x4d2d, 0x4c52, 0x0053, 
+    IDC_COMBO_BASICDATA_RATEDLOAD, 0x403, 4, 0
+0x3336, 0x0030, 
+    IDC_COMBO_BASICDATA_RATEDLOAD, 0x403, 4, 0
+0x3038, 0x0030, 
+    IDC_COMBO_BASICDATA_RATEDLOAD, 0x403, 5, 0
+0x3031, 0x3030, "\000" 
+    IDC_COMBO_BASICDATA_RATEDLOAD, 0x403, 5, 0
+0x3131, 0x3035, "\000" 
+    IDC_COMBO_BASICDATA_RATEDLOAD, 0x403, 5, 0
+0x3231, 0x3035, "\000" 
+    IDC_COMBO_BASICDATA_RATEDLOAD, 0x403, 5, 0
+0x3331, 0x3035, "\000" 
+    IDC_COMBO_BASICDATA_RATEDLOAD, 0x403, 5, 0
+0x3631, 0x3030, "\000" 
+    IDC_COMBO_BASICDATA_RATEDLOAD, 0x403, 5, 0
+0x3032, 0x3030, "\000" 
+    IDC_COMBO_BASICDATA_RATEDLOAD, 0x403, 5, 0
+0x3033, 0x3030, "\000" 
+    IDC_COMBO_BASICDATA_RATEDSPEED, 0x403, 4, 0
+0x2e30, 0x0035, 
+    IDC_COMBO_BASICDATA_RATEDSPEED, 0x403, 5, 0
+0x2e30, 0x3336, "\000" 
+    IDC_COMBO_BASICDATA_RATEDSPEED, 0x403, 5, 0
+0x2e31, 0x3030, "\000" 
+    IDC_COMBO_BASICDATA_RATEDSPEED, 0x403, 5, 0
+0x2e31, 0x3035, "\000" 
+    IDC_COMBO_BASICDATA_RATEDSPEED, 0x403, 5, 0
+0x2e31, 0x3537, "\000" 
+    IDC_COMBO_BASICDATA_RATEDSPEED, 0x403, 5, 0
+0x2e32, 0x3030, "\000" 
+    IDC_COMBO_BASICDATA_RATEDSPEED, 0x403, 5, 0
+0x2e32, 0x3035, "\000" 
+    IDC_COMBO_BASICDATA_CONTROLMODE, 0x403, 13, 0
+0xe7b5, 0xd4c4, 0xafbc, 0xa1d1, 0xd8bf, 0xc6d6, "\000" 
+    IDC_COMBO_BASICDATA_CONTROLMODE, 0x403, 17, 0
+0xe7b5, 0xd4c4, 0xafbc, 0xa1d1, 0xa2b2, 0xaac1, 0xd8bf, 0xc6d6, "\000" 
+    IDC_COMBO_BASICDATA_CONTROLMODE, 0x403, 17, 0
+0xe7b5, 0xd4c4, 0xafbc, 0xa1d1, 0xbac8, 0xd8bf, 0xd8bf, 0xc6d6, "\000" 
+    IDC_COMBO_BASICDATA_DRAGMODE, 0x403, 4, 0
+0x3a31, 0x0031, 
+    IDC_COMBO_BASICDATA_DRAGMODE, 0x403, 4, 0
+0x3a32, 0x0031, 
+    IDC_COMBO_BASICDATA_DRAGMODE, 0x403, 4, 0
+0x3a34, 0x0032, 
+    0
+END
+
+IDD_PAGE_ITEM_SHAFT DLGINIT
+BEGIN
+    IDC_COMBO_SHAFT_COUNTERWEIGHT, 0x403, 12, 0
+0xf3ba, 0xc3d6, 0x4220, 0x6865, 0x6e69, 0x0064, 
+    IDC_COMBO_SHAFT_COUNTERWEIGHT, 0x403, 10, 0
+0xf3d7, 0xc3d6, 0x4c20, 0x6665, 0x0074, 
+    IDC_COMBO_SHAFT_COUNTERWEIGHT, 0x403, 11, 0
+0xd2d3, 0xc3d6, 0x5220, 0x6769, 0x7468, "\000" 
+    IDC_COMBO_SHAFT_COUNTERWEIGHT, 0x403, 17, 0
+0xe0b2, 0xc3d6, 0xcf28, 0xbcea, 0xcdfb, 0xbdc1, 0xcda8, 0x29bc, "\000" 
+    IDC_COMBO_SHAFT_CWGAUGE, 0x403, 4, 0
+0x3537, 0x0030, 
+    IDC_COMBO_SHAFT_CWGAUGE, 0x403, 5, 0
+0x3031, 0x3030, "\000" 
+    IDC_COMBO_SHAFT_CWGAUGE, 0x403, 4, 0
+0x3934, 0x0036, 
+    IDC_COMBO_SHAFT_CWGAUGE, 0x403, 4, 0
+0x3735, 0x0036, 
+    IDC_COMBO_SGPOSITION, 0x403, 17, 0
+0xf3d7, 0xb0c7, 0xcf28, 0xbcea, 0xcdfb, 0xbdc1, 0xcda8, 0x29bc, "\000" 
+    IDC_COMBO_SGPOSITION, 0x403, 17, 0
+0xf3d7, 0xf3ba, 0xcf28, 0xbcea, 0xcdfb, 0xbdc1, 0xcda8, 0x29bc, "\000" 
+    IDC_COMBO_SGPOSITION, 0x403, 17, 0
+0xd2d3, 0xb0c7, 0xcf28, 0xbcea, 0xcdfb, 0xbdc1, 0xcda8, 0x29bc, "\000" 
+    IDC_COMBO_SGPOSITION, 0x403, 17, 0
+0xd2d3, 0xf3ba, 0xcf28, 0xbcea, 0xcdfb, 0xbdc1, 0xcda8, 0x29bc, "\000" 
+    IDC_COMBO_SHAFT_WJTYPE, 0x403, 7, 0
+0xb9b4, 0xb1d6, 0xcdd0, "\000" 
+    IDC_COMBO_SHAFT_WJTYPE, 0x403, 7, 0
+0xedbf, 0xb1d0, 0xcdd0, "\000" 
+    0
+END
+
+IDD_PAGE_ITEM_CAR DLGINIT
+BEGIN
+    IDC_COMBO_CAR_HOSTCONROLPANEL, 0x403, 11, 0
+0xd2d3, 0xe0b2, 0xb0c7, 0xcebd, 0xdab1, "\000" 
+    IDC_COMBO_CAR_HOSTCONROLPANEL, 0x403, 11, 0
+0xf3d7, 0xe0b2, 0xb0c7, 0xcebd, 0xdab1, "\000" 
+    IDC_COMBO_CAR_HOSTCONROLPANEL, 0x403, 15, 0
+0xd2d3, 0xe0b2, 0xdab5, 0xbbd2, 0xe9bf, 0xcebd, 0xdab1, "\000" 
+    IDC_COMBO_CAR_HOSTCONROLPANEL, 0x403, 15, 0
+0xf3d7, 0xe0b2, 0xdab5, 0xbbd2, 0xe9bf, 0xcebd, 0xdab1, "\000" 
+    IDC_COMBO_CAR_OPENTYPE, 0x403, 17, 0
+0xd0d6, 0xd6b7, 0x4320, 0x6e65, 0x7274, 0x2065, 0x706f, 0x6e65, "\000" 
+    IDC_COMBO_CAR_OPENTYPE, 0x403, 16, 0
+0xf3d7, 0xaabf, 0x5420, 0x6c65, 0x7365, 0x6f63, 0x2f70, 0x004c, 
+    IDC_COMBO_CAR_OPENTYPE, 0x403, 16, 0
+0xd2d3, 0xaabf, 0x5420, 0x6c65, 0x7365, 0x6f63, 0x2f70, 0x0052, 
+    IDC_COMBO_CAR_OPENTYPE, 0x403, 26, 0
+0xe1b9, 0xa8cd, 0xc5c3, 0xcb28, 0xd5ab, 0xd7db, 0xbff3, 0x2baa, 0xabcb, 
+0xdbd5, 0xd2d3, 0xaabf, 0x0029, 
+    IDC_COMBO_CAR_OPENTYPE, 0x403, 15, 0
+0xe1b9, 0xa8cd, 0xc5c3, 0xd628, 0xb7d0, 0xc3d6, 0x29c5, "\000" 
+    IDC_COMBO_CAR_OFFSETDIR, 0x403, 5, 0
+0xabc6, 0xf3d7, "\000" 
+    IDC_COMBO_CAR_OFFSETDIR, 0x403, 5, 0
+0xabc6, 0xd2d3, "\000" 
+    0
+END
+
+IDD_PAGE_ITEM_UPHOLSTER DLGINIT
+BEGIN
+    IDC_COMBO_UPHOLSTER_CEILING, 0x403, 7, 0
+0xc2d4, 0xe2b9, 0xcdd0, "\000" 
+    IDC_COMBO_UPHOLSTER_CEILING, 0x403, 7, 0
+0xc7d0, 0xe2b9, 0xcdd0, "\000" 
+    IDC_COMBO_UPHOLSTER_CEILING, 0x403, 7, 0
+0xd7bd, 0xddcc, 0xcdd0, "\000" 
+    IDC_COMBO_UPHOLSTER_CEILING, 0x403, 17, 0
+0xb5be, 0xe6c3, 0xbbb2, 0xe2d0, 0xd6b8, 0xc2d4, 0xe2b9, 0xcdd0, "\000" 
+    IDC_COMBO_UPHOLSTER_CEILING, 0x403, 17, 0
+0xa2b7, 0xc6ce, 0xbbb2, 0xe2d0, 0xd6b8, 0xc7d0, 0xe2b9, 0xcdd0, "\000" 
+    IDC_COMBO_UPHOLSTER_CEILING, 0x403, 17, 0
+0xa2b7, 0xc6ce, 0xbbb2, 0xe2d0, 0xd6b8, 0xd7bd, 0xddcc, 0xcdd0, "\000" 
+    IDC_COMBO_UPHOLSTER_CEILING, 0x403, 16, 0
+0xb0b4, 0xf1b8, 0xcdd0, 0x544c, 0x4c50, 0x7474, 0x6369, 0x0065, 
+    IDC_COMBO_UPHOLSTER_FRONTWALL, 0x403, 17, 0
+0xa2b7, 0xc6ce, 0xbbb2, 0xe2d0, 0xd6b8, 0x5320, 0x2e54, 0x5453, "\000" 
+    IDC_COMBO_UPHOLSTER_FRONTWALL, 0x403, 9, 0
+0x4152, 0x204c, 0x3031, 0x3531, "\000" 
+    IDC_COMBO_UPHOLSTER_FRONTWALL, 0x403, 9, 0
+0x4152, 0x204c, 0x3037, 0x3533, "\000" 
+    IDC_COMBO_UPHOLSTER_FRONTWALL, 0x403, 15, 0
+0x4152, 0x204c, 0x3031, 0x3531, 0xb428, 0xceb8, 0x29c6, "\000" 
+    IDC_COMBO_UPHOLSTER_FRONTWALL, 0x403, 15, 0
+0x4152, 0x204c, 0x3039, 0x3131, 0xb428, 0xceb8, 0x29c6, "\000" 
+    IDC_COMBO_UPHOLSTER_FRONTWALL, 0x403, 19, 0
+0xd8cc, 0xe2ca, 0xaad2, 0xf3c7, 0xcf28, 0xbcea, 0xb1fb, 0xd7b8, 0x29a2, 
+"\000" 
+    IDC_COMBO_UPHOLSTER_SIDEWALL, 0x403, 17, 0
+0xa2b7, 0xc6ce, 0xbbb2, 0xe2d0, 0xd6b8, 0x5320, 0x2e54, 0x5453, "\000" 
+    IDC_COMBO_UPHOLSTER_SIDEWALL, 0x403, 9, 0
+0x4152, 0x204c, 0x3031, 0x3531, "\000" 
+    IDC_COMBO_UPHOLSTER_SIDEWALL, 0x403, 9, 0
+0x4152, 0x204c, 0x3037, 0x3533, "\000" 
+    IDC_COMBO_UPHOLSTER_SIDEWALL, 0x403, 15, 0
+0x4152, 0x204c, 0x3031, 0x3531, 0xb428, 0xceb8, 0x29c6, "\000" 
+    IDC_COMBO_UPHOLSTER_SIDEWALL, 0x403, 15, 0
+0x4152, 0x204c, 0x3039, 0x3131, 0xb428, 0xceb8, 0x29c6, "\000" 
+    IDC_COMBO_UPHOLSTER_REARWALL, 0x403, 17, 0
+0xa2b7, 0xc6ce, 0xbbb2, 0xe2d0, 0xd6b8, 0x5320, 0x2e54, 0x5453, "\000" 
+    IDC_COMBO_UPHOLSTER_REARWALL, 0x403, 9, 0
+0x4152, 0x204c, 0x3031, 0x3531, "\000" 
+    IDC_COMBO_UPHOLSTER_REARWALL, 0x403, 9, 0
+0x4152, 0x204c, 0x3037, 0x3533, "\000" 
+    IDC_COMBO_UPHOLSTER_REARWALL, 0x403, 15, 0
+0x4152, 0x204c, 0x3031, 0x3531, 0xb428, 0xceb8, 0x29c6, "\000" 
+    IDC_COMBO_UPHOLSTER_REARWALL, 0x403, 15, 0
+0x4152, 0x204c, 0x3039, 0x3131, 0xb428, 0xceb8, 0x29c6, "\000" 
+    IDC_COMBO_UPHOLSTER_REARWALL, 0x403, 19, 0
+0xd8cc, 0xe2ca, 0xaad2, 0xf3c7, 0xcf28, 0xbcea, 0xb1fb, 0xd7b8, 0x29a2, 
+"\000" 
+    IDC_COMBO_UPHOLSTER_SIDEHANDRAIL, 0x403, 9, 0
+0xa1bb, 0xced0, 0xf6b7, 0xd6ca, "\000" 
+    IDC_COMBO_UPHOLSTER_SIDEHANDRAIL, 0x403, 8, 0
+0xd053, 0xb7cd, 0xcaf6, 0x00d6, 
+    IDC_COMBO_UPHOLSTER_SIDEHANDRAIL, 0x403, 13, 0
+0xbec4, 0xc6d6, 0xb2d4, 0xcdd0, 0xf6b7, 0xd6ca, "\000" 
+    IDC_COMBO_UPHOLSTER_SIDEHANDRAIL, 0x403, 19, 0
+0xa2b7, 0xc6ce, 0xbbb2, 0xe2d0, 0xd6b8, 0xb2d4, 0xcdd0, 0xf6b7, 0xd6ca, 
+"\000" 
+    IDC_COMBO_UPHOLSTER_SIDEHANDRAIL, 0x403, 19, 0
+0xa2b7, 0xc6ce, 0xbbb2, 0xe2d0, 0xd6b8, 0xe2b1, 0xcdd0, 0xf6b7, 0xd6ca, 
+"\000" 
+    IDC_COMBO_UPHOLSTER_SIDEHANDRAIL, 0x403, 19, 0
+0xd8cc, 0xe2ca, 0xaad2, 0xf3c7, 0xcf28, 0xbcea, 0xb1fb, 0xd7b8, 0x29a2, 
+"\000" 
+    IDC_COMBO_UPHOLSTER_REARHANDRAIL, 0x403, 9, 0
+0xa1bb, 0xced0, 0xf6b7, 0xd6ca, "\000" 
+    IDC_COMBO_UPHOLSTER_REARHANDRAIL, 0x403, 8, 0
+0xd053, 0xb7cd, 0xcaf6, 0x00d6, 
+    IDC_COMBO_UPHOLSTER_REARHANDRAIL, 0x403, 13, 0
+0xbec4, 0xc6d6, 0xb2d4, 0xcdd0, 0xf6b7, 0xd6ca, "\000" 
+    IDC_COMBO_UPHOLSTER_REARHANDRAIL, 0x403, 19, 0
+0xa2b7, 0xc6ce, 0xbbb2, 0xe2d0, 0xd6b8, 0xb2d4, 0xcdd0, 0xf6b7, 0xd6ca, 
+"\000" 
+    IDC_COMBO_UPHOLSTER_REARHANDRAIL, 0x403, 19, 0
+0xa2b7, 0xc6ce, 0xbbb2, 0xe2d0, 0xd6b8, 0xe2b1, 0xcdd0, 0xf6b7, 0xd6ca, 
+"\000" 
+    IDC_COMBO_UPHOLSTER_REARHANDRAIL, 0x403, 19, 0
+0xd8cc, 0xe2ca, 0xaad2, 0xf3c7, 0xcf28, 0xbcea, 0xb1fb, 0xd7b8, 0x29a2, 
+"\000" 
+    IDC_COMBO_UPHOLSTER_GLASSTYPE, 0x403, 19, 0
+0xf8b4, 0xb5be, 0xf2bf, 0xc4b5, 0xebb0, 0xedc9, 0xfbd5, 0xddc8, 0xb5be, 
+"\000" 
+    IDC_COMBO_UPHOLSTER_GLASSTYPE, 0x403, 15, 0
+0xf8b4, 0xb5be, 0xf2bf, 0xc4b5, 0xfbd5, 0xddc8, 0xb5be, "\000" 
+    IDC_COMBO_UPHOLSTER_GLASSPOSITION, 0x403, 5, 0
+0xf3ba, 0xe0b2, "\000" 
+    IDC_COMBO_UPHOLSTER_GLASSPOSITION, 0x403, 10, 0
+0xf3d7, 0xd32c, 0xc1d2, 0xb2bd, 0x00e0, 
+    IDC_COMBO_UPHOLSTER_GLASSPOSITION, 0x403, 13, 0
+0xf3d7, 0xd32c, 0x2cd2, 0xf3ba, 0xfdc8, 0xe0b2, "\000" 
+    IDC_COMBO_UPHOLSTER_DOOR, 0x403, 17, 0
+0xa2b7, 0xc6ce, 0xbbb2, 0xe2d0, 0xd6b8, 0x5320, 0x2e54, 0x5453, "\000" 
+    IDC_COMBO_UPHOLSTER_DOOR, 0x403, 9, 0
+0x4152, 0x204c, 0x3031, 0x3531, "\000" 
+    IDC_COMBO_UPHOLSTER_DOOR, 0x403, 9, 0
+0x4152, 0x204c, 0x3037, 0x3533, "\000" 
+    IDC_COMBO_UPHOLSTER_DOOR, 0x403, 15, 0
+0x4152, 0x204c, 0x3031, 0x3531, 0xb428, 0xceb8, 0x29c6, "\000" 
+    IDC_COMBO_UPHOLSTER_DOOR, 0x403, 15, 0
+0x4152, 0x204c, 0x3039, 0x3131, 0xb428, 0xceb8, 0x29c6, "\000" 
+    IDC_COMBO_UPHOLSTER_DOOR, 0x403, 19, 0
+0xd8cc, 0xe2ca, 0xaad2, 0xf3c7, 0xcf28, 0xbcea, 0xb1fb, 0xd7b8, 0x29a2, 
+"\000" 
+    IDC_COMBO_UPHOLSTER_FLOOR, 0x403, 11, 0
+0x5650, 0x2843, 0x6857, 0x7469, 0x2965, "\000" 
+    IDC_COMBO_UPHOLSTER_FLOOR, 0x403, 10, 0
+0x5650, 0x2843, 0x6c42, 0x6575, 0x0029, 
+    IDC_COMBO_UPHOLSTER_FLOOR, 0x403, 10, 0
+0x5650, 0x2843, 0x7247, 0x7965, 0x0029, 
+    IDC_COMBO_UPHOLSTER_FLOOR, 0x403, 13, 0
+0x5650, 0x2843, 0x6b53, 0x6c79, 0x6e69, 0x2965, "\000" 
+    IDC_COMBO_UPHOLSTER_FLOOR, 0x403, 10, 0
+0x5650, 0x2843, 0x6f42, 0x656e, 0x0029, 
+    IDC_COMBO_UPHOLSTER_FLOOR, 0x403, 13, 0
+0xf3b4, 0xedc0, 0xafca, 0x3228, 0x6d35, 0x296d, "\000" 
+    IDC_COMBO_UPHOLSTER_FLOOR, 0x403, 32, 0
+0xa4d4, 0xf4c1, 0x3532, 0x6d6d, 0xf3b4, 0xedc0, 0xafca, 0xd5bf, 0xbbce, 
+0xbd2c, 0xb5ce, 0xb7d7, 0xd0c0, 0xb4e2, 0xc0a6, 0x00ed, 
+    IDC_COMBO_UPHOLSTER_FLOOR, 0x403, 28, 0
+0xa4d4, 0xf4c1, 0x6d32, 0x506d, 0x4356, 0xd5bf, 0xbbce, 0xbd2c, 0xb5ce, 
+0xb7d7, 0xd0c0, 0xb4e2, 0xc0a6, 0x00ed, 
+    0
+END
+
+IDD_PAGE_ITEM_ELECTRIC DLGINIT
+BEGIN
+    IDC_COMBO_ELECTRIC_CONTROLLER, 0x403, 8, 0
+0x4954, 0x2d43, 0x4949, 0x0049, 
+    IDC_COMBO_ELECTRIC_CONTROLLER, 0x403, 4, 0
+0x434d, 0x0032, 
+    IDC_COMBO_ELECTRIC_CALLBOARDTYPE, 0x403, 7, 0
+0x4754, 0x3358, 0x3130, "\000" 
+    IDC_COMBO_ELECTRIC_CALLBOARDTYPE, 0x403, 7, 0
+0x4754, 0x3358, 0x3230, "\000" 
+    IDC_COMBO_ELECTRIC_CALLBOARDTYPE, 0x403, 7, 0
+0x4754, 0x3358, 0x3330, "\000" 
+    IDC_COMBO_ELECTRIC_CALLBOARDTYPE, 0x403, 14, 0
+0x4754, 0x3033, 0x5330, 0x542b, 0x5a47, 0x3033, 0x0031, 
+    IDC_COMBO_ELECTRIC_SCREENMAGIC, 0x403, 4, 0
+0x534c, 0x0045, 
+    IDC_COMBO_ELECTRIC_SCREENMAGIC, 0x403, 17, 0
+0x694d, 0x7263, 0x736f, 0x6163, 0x206e, 0x3144, 0x3030, 0x4c53, "\000" 
+    IDC_COMBO_ELECTRIC_SCREENMAGIC, 0x403, 18, 0
+0x454d, 0x434d, 0x204f, 0x3136, 0x2038, 0x504e, 0x204e, 0x2f4e, 0x0043, 
+
+    IDC_COMBO_ELECTRIC_PUSHBUTTON, 0x403, 4, 0
+0x504d, 0x0053, 
+    IDC_COMBO_ELECTRIC_PUSHBUTTON, 0x403, 12, 0
+0x504d, 0x2853, 0xf8b4, 0xa4c3, 0xc4ce, 0x0029, 
+    IDC_COMBO_ELECTRIC_PUSHBUTTON, 0x403, 7, 0
+0xb9bf, 0xfabe, 0xcdd0, "\000" 
+    IDC_COMBO_ELECTRIC_PUSHBUTTON, 0x403, 5, 0
+0xb2d4, 0xcdd0, "\000" 
+    0
+END
+
+IDD_PAGE_ITEM_PARTS DLGINIT
+BEGIN
+    IDC_COMBO_TRACTION, 0x403, 8, 0
+0x5754, 0x314e, 0x3036, 0x0044, 
+    IDC_COMBO_TRACTION, 0x403, 7, 0
+0x5754, 0x3254, 0x3030, "\000" 
+    IDC_COMBO_TRACTION, 0x403, 7, 0
+0x5754, 0x3254, 0x3034, "\000" 
+    IDC_COMBO_TRACTION, 0x403, 8, 0
+0x5754, 0x3254, 0x3534, 0x0044, 
+    IDC_COMBO_TRACTION, 0x403, 5, 0
+0x5754, 0x3336, "\000" 
+    IDC_COMBO_TRACTION, 0x403, 6, 0
+0x5754, 0x3337, 0x0053, 
+    IDC_COMBO_TRACTION, 0x403, 6, 0
+0x5754, 0x3537, 0x0053, 
+    IDC_COMBO_TRACTION, 0x403, 5, 0
+0x5754, 0x3339, "\000" 
+    IDC_COMBO_TRACTION, 0x403, 5, 0
+0x5754, 0x3839, "\000" 
+    IDC_COMBO_TRACTION, 0x403, 8, 0
+0x5754, 0x3031, 0x4234, 0x0039, 
+    IDC_COMBO_TRACTION, 0x403, 7, 0
+0x4d50, 0x3453, 0x3532, "\000" 
+    IDC_COMBO_TRACTION, 0x403, 7, 0
+0x4d50, 0x3353, 0x3030, "\000" 
+    IDC_COMBO_CARRAIL, 0x403, 8, 0
+0x3754, 0x2d35, 0x2f33, 0x0042, 
+    IDC_COMBO_CARRAIL, 0x403, 6, 0
+0x3854, 0x2f39, 0x0042, 
+    IDC_COMBO_CARRAIL, 0x403, 6, 0
+0x3954, 0x2f30, 0x0042, 
+    IDC_COMBO_CARRAIL, 0x403, 8, 0
+0x3154, 0x3431, 0x422f, 0x002f, 
+    IDC_COMBO_ENCODE, 0x403, 12, 0
+0x4253, 0x2d4c, 0x3031, 0x3432, 0x322d, 0x0054, 
+    IDC_COMBO_ENCODE, 0x403, 12, 0
+0x4253, 0x2d48, 0x3031, 0x3532, 0x322d, 0x0054, 
+    IDC_COMBO_ENCODE, 0x403, 7, 0
+0x4952, 0x3637, 0x4454, "\000" 
+    IDC_COMBO_ENCODE, 0x403, 19, 0
+0x454d, 0x494d, 0x4f43, 0x284e, 0x3031, 0x3432, 0x7550, 0x736c, 0x2965, 
+"\000" 
+    IDC_COMBO_ENCODE, 0x403, 19, 0
+0x4345, 0x314e, 0x3133, 0x2833, 0x3032, 0x3834, 0x7550, 0x736c, 0x2965, 
+"\000" 
+    IDC_COMBO_ENCODE, 0x403, 6, 0
+0x5253, 0x3653, 0x0030, 
+    IDC_COMBO_ENCODE, 0x403, 11, 0
+0x5354, 0x3235, 0x3634, 0x314e, 0x3036, "\000" 
+    IDC_COMBO_CWRAIL, 0x403, 5, 0
+0x4b54, 0x4135, "\000" 
+    IDC_COMBO_CWRAIL, 0x403, 8, 0
+0x3754, 0x2d35, 0x2f33, 0x0042, 
+    IDC_COMBO_CAR_DOORSYSTEM, 0x403, 10, 0
+0x314b, 0x3030, 0x532f, 0x3031, 0x0030, 
+    IDC_COMBO_CAR_DOORSYSTEM, 0x403, 6, 0
+0x384b, 0x532f, 0x0038, 
+    IDC_COMBO_SAFETY, 0x403, 5, 0
+0x5141, 0x3131, "\000" 
+    IDC_COMBO_SAFETY, 0x403, 16, 0
+0x3036, 0x3137, 0x312d, 0x312f, 0x3431, 0x5228, 0x4c2c, 0x0029, 
+    IDC_COMBO_SPEEDGOVERNOR, 0x403, 14, 0
+0x6957, 0x7474, 0x7275, 0x4c2d, 0x204b, 0x3033, 0x0030, 
+    IDC_COMBO_SPEEDGOVERNOR, 0x403, 14, 0
+0x6957, 0x7474, 0x7275, 0x4c2d, 0x204b, 0x3532, 0x0030, 
+    IDC_COMBO_SPEEDGOVERNOR, 0x403, 11, 0
+0x4650, 0x2d42, 0x4b4c, 0x3320, 0x3030, "\000" 
+    IDC_COMBO_SPEEDGOVERNOR, 0x403, 11, 0
+0x4650, 0x2d42, 0x4b4c, 0x3220, 0x3035, "\000" 
+    IDC_COMBO_SPEEDGOVERNOR, 0x403, 4, 0
+0x5358, 0x0031, 
+    IDC_COMBO_SPEEDGOVERNOR, 0x403, 7, 0
+0x3038, 0x3332, 0x312d, "\000" 
+    IDC_COMBO_SPEEDGOVERNOR, 0x403, 5, 0
+0x4753, 0x3832, "\000" 
+    IDC_COMBO_SPEEDGOVERNOR, 0x403, 7, 0
+0x4f47, 0x334c, 0x3030, "\000" 
+    IDC_COMBO_BUFFER, 0x403, 3, 0
+0x3454, "\000" 
+    IDC_COMBO_BUFFER, 0x403, 3, 0
+0x3554, "\000" 
+    IDC_COMBO_BUFFER, 0x403, 8, 0
+0x5948, 0x2f32, 0x3032, 0x0036, 
+    IDC_COMBO_BUFFER, 0x403, 8, 0
+0x4859, 0x2f34, 0x3732, 0x0030, 
+    IDC_COMBO_BUFFER, 0x403, 8, 0
+0x4859, 0x2f32, 0x3234, 0x0030, 
+    IDC_COMBO_BUFFER, 0x403, 8, 0
+0x4e45, 0x2c32, 0x4e45, 0x0033, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_PEMSYS              REGISTRY                "PEMSys.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+    IDP_SOCKETS_INIT_FAILED "Windows 套接字初始化失败。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "PEMSys"
+    IDR_PEMSysTYPE          "\nPEMSys\nPEMSys\nPEMSys Files (*.let)\n.let\nPEMSys.Document\nPEMSys.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "PEMSys"
+    AFX_IDS_IDLEMESSAGE     "若要获取帮助，请按 F1"
+    AFX_IDS_HELPMODEMESSAGE "选择要获取其帮助信息的对象"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_SEND_MAIL       "通过电子邮件发送活动文档\n发送邮件"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序\n退出"
+    ID_HELP_INDEX           "打开帮助\n帮助主题"
+    ID_HELP_FINDER          "列出帮助主题\n帮助主题"
+    ID_HELP_USING           "显示有关如何使用帮助的说明\n帮助"
+    ID_CONTEXT_HELP         "显示有关单击过的按钮、菜单和窗口的帮助信息\n帮助"
+    ID_HELP                 "显示当前任务或命令的帮助信息\n帮助"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
+    ID_WINDOW_ARRANGE       "在窗口底部排列图标\n排列图标"
+    ID_WINDOW_CASCADE       "以重叠方式排列窗口\n层叠窗口"
+    ID_WINDOW_TILE_HORZ     "以非重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_TILE_VERT     "以非重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+    AFX_IDS_MDICHILD        "激活此窗口"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_LOGIN                "登录后方可操作\n登录"
+    ID_LOGOUT               "重新登录,请先注销!\n注销"
+    ID_PASSWORD             "用户密码修改\n密码修改"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SYSCONFIG            "系统配置"
+    ID_BACKUP               "数据库备份,需管理员权限\n备份"
+    ID_ITEM_ITEM            "包括项目名,地点,时间的项目信息\n项目"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PROJECT_MOLOUTPUT    "合同配置MOL表输出到文件并打印\nMOL输出"
+    ID_RESOURCE_PART        "产品零部件\n零部件"
+    ID_RESOURCE_SPECIALPART "产品特殊件\n特殊件"
+    ID_RESOURCE_PARTBOM     "产品部件组装零件清单\n零件BOM"
+    ID_RESOURCE_BOMOUTPUT   "产品部件组装零件清单输出\nBOM输出"
+    ID_SUPPLIER_BASIC       "供应商基本资料\n基本资料"
+    ID_SUPPLIER_SEARCH      "供应商资料"
+    ID_SUPPLIER_PRODUCT     "建立零部件和供应商关联\n产品关联"
+    ID_CUSTOMER_BASIC       "分公司,客户资料的输入修改等\n基本资料"
+    ID_CUSTOMER_SEARCH      "分公司,客户资料的查询\n信息查询"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ITEM_SHAFT           "项目井道资料\n井道"
+    ID_ITEM_MACHINEROOM     "项目机房资料\n机房"
+    ID_ITEM_FLOOR           "项目楼层资料\n楼层"
+    ID_ITEM_CAR             "项目轿厢资料\n轿厢"
+    ID_ITEM_ELECTRIC        "项目电气资料\n电气"
+    ID_ITEM_OTHER           "项目其它资料\n其它 "
+    ID_PROJECT_WIZARD       "合同向导\n向导"
+    ID_PROJECT_MOLMAKE      "合同配置MOL表生成\nMOL生成"
+    ID_PROJECT_PROJECTMOL   "合同配置MOL表的查询,修改添加等\n合同MOL"
+    ID_PROJECT_STANDARDMOL  "标准电梯MOL配置表\n标准MOL"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SKIN          "界面方案"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RESTOREDATA          "还原数据库，需管理员权限\n还原"
+    ID_SYS_PERSON           "新增人员添加\n人员维护"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ITEM_BASICDATA       "订单主要技术参数和相同配置订单列组\n 主要参数"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ITEM_COMMERCESEARCH  "订单商务查询\n商务查询"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\PEMSys.rc2"  // 非 Microsoft Visual C++ 编辑资源
+#include "afxres.rc"         // 标准组件
+#endif
+1 TYPELIB "PEMSys.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

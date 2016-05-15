@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<BrowseTracker_layout_file>
+	<ActiveTarget name="Debug Win32" />
+	<File name="MainFrm.h" open="0" top="0" tabpos="0">
+		<Cursor position="1520" topLine="54" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="SearchPopItemDlg.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="484" topLine="21" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="CommerceDeliveryPage.h" open="0" top="0" tabpos="5">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="NewClientWnd.h" open="0" top="0" tabpos="0">
+		<Cursor position="452" topLine="30" />
+	</File>
+	<File name="stdafx.h" open="0" top="0" tabpos="0">
+		<Cursor position="3280" topLine="59" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="PEMSys.h" open="1" top="0" tabpos="6">
+		<Cursor position="286" topLine="15" />
+	</File>
+	<File name="ItemDataInputView.h" open="0" top="0" tabpos="6">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="PEMSys.rc" open="0" top="0" tabpos="0">
+		<Cursor position="3668" topLine="89" />
+	</File>
+	<File name="PEMSysView.cpp" open="0" top="0" tabpos="9">
+		<Cursor position="242" topLine="97" />
+	</File>
+	<File name="MainFrm.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="15954" topLine="629" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="LoginDialog.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="CommerceDeliveryPage.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="SplashWnd.cpp" open="0" top="0" tabpos="10">
+		<Cursor position="3487" topLine="116" />
+	</File>
+	<File name="NewClientWnd.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="384" topLine="0" />
+	</File>
+	<File name="ItemCommerceSearchView.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="363" topLine="15" />
+	</File>
+	<File name="PEMSys.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="19466" topLine="0" />
+	</File>
+	<File name="DataSameCopyDlg.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="ItemDataInputView.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="362" topLine="0" />
+	</File>
+	<File name="PEMSysDoc.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="1241" topLine="81" />
+	</File>
+	<File name="ExcelType\excel9.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="95584" topLine="3649" />
+	</File>
+</BrowseTracker_layout_file>
